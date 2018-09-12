@@ -1,6 +1,6 @@
 package com.springbootnetty.config;
 
-import com.springnetty.handler.MyChannelHandler;
+import com.springbootnetty.handler.MyChannelHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

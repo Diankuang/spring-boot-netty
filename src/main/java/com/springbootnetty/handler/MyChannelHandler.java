@@ -75,7 +75,7 @@ public class MyChannelHandler extends ChannelHandlerAdapter {
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         LOGGER.info("【channelActive】=====>"+ctx.channel());
         Map<String, ChannelId> map = SingletonMap.getInstance();
-        map.put("tcp",ctx.channel().id());
+        map.put("test-mac-addr",ctx.channel().id());
         ByteBuf buffer = ctx.alloc().buffer();
         buffer.writeBytes("GM".getBytes());
 

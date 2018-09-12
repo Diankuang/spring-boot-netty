@@ -1,0 +1,23 @@
+server:
+  port: 8093
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: pegasi-mini-program
+  redis:
+        database: 1
+        password: 1234
+        port: 6379
+        host: 192.168.1.208
+        timeout: 5000
+  activemq:
+    broker-url: tcp://192.168.1.208:61608
+  jms:
+    isPubSubDomain: false
+
+# netty port
+netty:
+  server:
+    port: 9001
+
